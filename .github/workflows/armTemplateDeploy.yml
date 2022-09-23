@@ -12,12 +12,12 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Azure Login
-        uses: Azure/login@v2
+        uses: Azure/login@v1
         with:
           creds: ${{secrets.AZURE_CREDS}}
 
       - name: Azure CLI Action
-        uses: Azure/cli@v1
+        uses: Azure/cli@v2
         with: 
           inlinescript:
             az deployment sub create --location "Australia East" --template-file ./arm-templates/resourcegroup.json
