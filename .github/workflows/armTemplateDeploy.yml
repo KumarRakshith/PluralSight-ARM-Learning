@@ -16,7 +16,7 @@ jobs:
         with:
           creds: ${{secrets.AZURE_CREDS}}
       - name: Azure CLI Action
-        uses: Azure/cli@2
+        uses: Azure/cli@1
 
         with: 
           inlinescript:
