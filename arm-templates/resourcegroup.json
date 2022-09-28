@@ -7,7 +7,7 @@
             "metadata": {
                 "description": "Enter the location to deploy the resource to"
             },
-            "defaultValue": "westeurope"
+            "defaultValue": "Australia East"
         },
         "resourceGroupName": {
             "type": "string",
@@ -23,11 +23,14 @@
         {
             "name": "[parameters('resourceGroupName')]",
             "type": "Microsoft.Resources/resourceGroups",
-            "apiVersion": "2021-05-01",
+            "apiVersion": "2019-10-01",
             "location": "[parameters('location')]",
-            "dependsOn": [],
-            "tags": {}
+            "dependsOn": [
+            ],
+            "tags": {
+            }
         }
     ],
     "outputs": {}
+
 }
