@@ -32,7 +32,10 @@ jobs:
           resourceGroupName: rg-githubactions-test
           subscriptionId: 2ca69f6a-bdaf-49aa-a407-7b487eed4bf5
           template: ./arm-templates/storageaccount.json
-          parameters: ./arm-templates/storageaccount.parameters.json
+          parameters: 
+            ./arm-templates/storageaccount.parameters.json
+            storageAccountName=globosg002
+            location="Australia East"
           deploymentMode: incremental
 
 
